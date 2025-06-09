@@ -1,0 +1,178 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container,
+.container-border,
+.flex-container,
+.footer-container,
+.flex-images,
+.container-contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+h1, h2, h4, .h1-footer, .title, .p-footer,
+.icon-block p, .icon-block label {
+  text-align: center;
+  word-break: break-word;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+.container-input input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.TXT,
+.maimuni,
+.txa,
+.spliyvi,
+.footer-content,
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.racxa,
+.holiday {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .flex-container,
+  .flex-images,
+  .footer-container,
+  .container-border {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+
+  .TXT {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .footer-content {
+    margin: 0 0 40px 0;
+  }
+}
+
+@media (max-width: 728px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .h1-footer, h1 {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+
+  #h2, h2 {
+    margin-top: 50px;
+    font-size: 26px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .container,
+  .TXT {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, .h1-footer {
+    font-size: 16px;
+  }
+
+  h2, #h2 {
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .p-footer,
+  .icon-block p,
+  .icon-block label {
+    font-size: 13px;
+  }
+
+  textarea {
+    height: 180px;
+  }
+}
+
+@media (max-width: 300px) {
+  html, body {
+    padding: 0 5px;
+  }
+
+  .container,
+  .TXT {
+    padding: 10px;
+  }
+
+  .flex-container,
+  .flex-images,
+  .container-border,
+  .container-contact-icons,
+  .footer-container {
+    gap: 20px;
+  }
+
+  h1, .h1-footer {
+    font-size: 14px;
+  }
+
+  h2, #h2 {
+    font-size: 18px;
+  }
+
+  .title, h4 {
+    font-size: 14px;
+  }
+
+  .container-border .border {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
