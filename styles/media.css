@@ -1,178 +1,229 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  width: 100%;
-  max-width: 100%;
-}
+@media (max-width: 728px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 730px;
+  }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+  body {
+    padding: 0 10px;
+  }
 
-.container,
-.container-border,
-.flex-container,
-.footer-container,
-.flex-images,
-.container-contact-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
+  .h1-footer {
+    margin-top: 200px;
+    font-size: 18px;
+    text-align: center;
+  }
 
-h1, h2, h4, .h1-footer, .title, .p-footer,
-.icon-block p, .icon-block label {
-  text-align: center;
-  word-break: break-word;
-}
-
-textarea,
-input[type="text"],
-input[type="email"],
-input[type="submit"],
-.container-input input {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-.TXT,
-.maimuni,
-.txa,
-.spliyvi,
-.footer-content,
-.footer-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-}
-
-.racxa,
-.holiday {
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: 1024px) {
-  .flex-container,
-  .flex-images,
-  .footer-container,
-  .container-border {
-    flex-direction: column;
-    gap: 30px;
+  #h2 {
+    margin-top: 200px;
+    font-size: 30px;
+    width: auto;
+    text-align: center;
   }
 
   .container {
     padding: 40px 20px;
   }
 
-  .TXT {
+  .flex-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  textarea,
+  .container-input input,
+  input[type="submit"] {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .container-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .Txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
     margin-top: 20px;
-    padding: 0 20px;
-  }
-
-  .footer-content {
-    margin: 0 0 40px 0;
-  }
-}
-
-@media (max-width: 728px) {
-  body {
     padding: 0 10px;
   }
 
-  .h1-footer, h1 {
-    margin-top: 50px;
-    font-size: 18px;
+  .maimuni,
+  .txa,
+  .spliyvi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
 
-  #h2, h2 {
-    margin-top: 50px;
-    font-size: 26px;
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
   }
 
-  .title {
-    font-size: 18px;
+  .footer-content {
+    margin-right: 0;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
   }
 
-  h4 {
-    font-size: 16px;
+  .footer-section {
+    width: 100%;
   }
 
-  .container,
-  .TXT {
-    padding: 20px 10px;
+  .racxa,
+  .holiday {
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   h1, .h1-footer {
-    font-size: 16px;
+    margin-top: 200px;
+    font-size: 20px;
+    text-align: center;
   }
 
   h2, #h2 {
-    font-size: 22px;
+    margin-top: 200px;
+    font-size: 28px;
+    width: auto;
+    text-align: center;
   }
 
   .title {
-    font-size: 16px;
+    font-size: 18px;
+    text-align: center;
   }
 
   h4 {
-    font-size: 14px;
-  }
-
-  .p-footer,
-  .icon-block p,
-  .icon-block label {
-    font-size: 13px;
+    font-size: 16px;
+    text-align: center;
   }
 
   textarea {
-    height: 180px;
+    height: 200px;
+  }
+
+  .flex-images {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .Txt {
+    padding: 0 20px;
   }
 }
 
 @media (max-width: 300px) {
   html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  body {
     padding: 0 5px;
   }
 
   .container,
-  .TXT {
-    padding: 10px;
+  .Txt {
+    padding: 20px 10px;
   }
 
   .flex-container,
   .flex-images,
+  .footer-container,
   .container-border,
-  .container-contact-icons,
-  .footer-container {
+  .container-contact-icons {
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
+    max-width: 300px;
+    width: 80%;
   }
 
   h1, .h1-footer {
-    font-size: 14px;
-  }
-
-  h2, #h2 {
+    margin-top: 50px;
     font-size: 18px;
   }
 
-  .title, h4 {
+  h2, #h2 {
+    margin-top: 50px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  h4 {
     font-size: 14px;
+    text-align: center;
+  }
+
+  .p-footer,
+  .icon-block p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .icon-block label {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .maimuni,
+  .txa,
+  .spliyvi {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  textarea,
+  .container-input input,
+  input[type="submit"] {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .racxa,
+  .holiday {
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
   .container-border .border {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
   }
 }

@@ -51,7 +51,6 @@ textarea {
     gap: 20px;
     margin-bottom: 51px;
     flex-wrap: wrap;
-    
 }    
 
 .container-input{
@@ -82,7 +81,6 @@ input[type=submit]{
     font-size: 14px; 
     cursor: pointer;
 }
-
 
 .container-border {
     display: flex;
@@ -116,8 +114,6 @@ input[type=submit]{
     width: 23px;
     height: 38px;
 }
-
-
 
 .Txt{
     display: flex;
@@ -158,7 +154,6 @@ label{
     height: 23px;
     font-weight: 700;
     font-size: 20px;
-    
 }
 
 p{
@@ -191,7 +186,6 @@ p{
     border-start-end-radius: 11%;
 }
 
-
 #h2{
     width: 548px;
     color: #FFFFFF;
@@ -210,17 +204,15 @@ p{
 
 .body-cont{
     padding: 53px 61px;
-
 }
 
 .holiday{
     width: 373px;
     height: 373px;
     box-shadow: 10px 19px 52px 0px rgba(58,58,96,0.99);
--webkit-box-shadow: 10px 19px 52px 0px rgba(58,58,96,0.99);
--moz-box-shadow: 10px 19px 52px 0px rgba(58,58,96,0.99);
+    -webkit-box-shadow: 10px 19px 52px 0px rgba(58,58,96,0.99);
+    -moz-box-shadow: 10px 19px 52px 0px rgba(58,58,96,0.99);
 }
-
 
 .racxa {
   display: flex;
