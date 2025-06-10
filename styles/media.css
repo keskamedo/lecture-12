@@ -1,127 +1,109 @@
-@media (max-width: 728px) {
-  html, body {
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 730px;
-  }
-
+@media only screen and (max-width: 480px) {
   body {
-    padding: 0 10px;
-  }
-
-  .h1-footer {
-    margin-top: 200px;
-    font-size: 18px;
-    text-align: center;
-  }
-
-  #h2 {
-    margin-top: 200px;
-    font-size: 30px;
-    width: auto;
-    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   .container {
-    padding: 40px 20px;
+    padding: 20px 15px;
+    width: 100%;
+  }
+
+  h1 {
+    width: auto;
+    font-size: 16px;
+  }
+
+  h2 {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    font-size: 28px;
+    line-height: 1.2;
+    text-shadow: none; 
   }
 
   .flex-container {
     flex-direction: column;
-    gap: 30px;
-  }
-
-  textarea,
-  .container-input input,
-  input[type="submit"] {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .container-border {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .Txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    margin-top: 20px;
-    padding: 0 10px;
-  }
-
-  .maimuni,
-  .txa,
-  .spliyvi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-  }
-
-  .footer-content {
-    margin-right: 0;
-    margin-bottom: 40px;
-    width: 100%;
-    height: auto;
-    max-height: 700px;
-  }
-
-  .footer-section {
-    width: 100%;
-  }
-
-  .racxa,
-  .holiday {
-    width: 100%;
-    height: auto;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-}
-
-@media (max-width: 600px) {
-  h1, .h1-footer {
-    margin-top: 200px;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  h2, #h2 {
-    margin-top: 200px;
-    font-size: 28px;
-    width: auto;
-    text-align: center;
-  }
-
-  .title {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  h4 {
-    font-size: 16px;
-    text-align: center;
+    gap: 15px;
+    margin-bottom: 30px;
   }
 
   textarea {
+    width: 100%;
+    max-width: none;
     height: 200px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  .container-input {
+    width: 100%;
+  }
+
+  input[type=text], input[type=Email], input[type=submit] {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .container-border {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .border {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0;
+  }
+
+  .maimuni, .txa, .spliyvi {
+    text-align: left;
+  }
+
+  .Txt {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .edu, .edi, .num, .str, .street {
+    width: auto;
+    max-width: none;
+  }
+
+  .container-hh {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  #h1 {
+    width: auto;
+    font-size: 16px;
+  }
+
+  #h2 {
+    width: 100%;
+    max-width: none;
+    font-size: 24px;
+    text-shadow: none;
+  }
+
+  .body-cont {
+    padding: 30px 15px;
+    width: 100%;
   }
 
   .flex-images {
@@ -130,100 +112,381 @@
     align-items: center;
   }
 
-  .Txt {
-    padding: 0 20px;
+  .holiday {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    box-shadow: 5px 10px 25px 0px rgba(58,58,96,0.5);
+  }
+
+  .racxa {
+    padding: 30px 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-content {
+    margin-bottom: 30px;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .h1-footer {
+    width: auto;
+    font-size: 24px;
+  }
+
+  .p-footer {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .icons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .footer-section {
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-section h4 {
+    display: block;
+    margin-top: 5px;
   }
 }
 
-@media (max-width: 300px) {
-  html, body {
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 300px;
-  }
-
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    padding: 0 5px;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
   }
 
-  .container,
+  .container {
+    padding: 40px 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    font-size: 36px;
+    width: 100%;
+    height: auto;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+  }
+
+  input[type=text], input[type=Email], input[type=submit] {
+    width: 100%;
+  }
+
+  section {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .container-border {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 25px;
+  }
+
+  .border {
+    margin-bottom: 0;
+  }
+
+  .maimuni, .txa, .spliyvi {
+    text-align: left;
+  }
+
   .Txt {
-    padding: 20px 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
-  .flex-container,
-  .flex-images,
-  .footer-container,
-  .container-border,
-  .container-contact-icons {
+  .body-cont {
+    padding: 40px 30px;
+  }
+
+  .flex-images {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .holiday {
+    width: 300px;
+    height: 300px;
+  }
+
+  .racxa {
+    padding: 40px 30px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1028px) {
+  body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 40px 4%;
+    width: 100%;
+  }
+
+  h2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 250px;
+
+  }
+
+  .container-input {
+    width: 100%;
+  }
+
+  input[type=text], input[type=Email], input[type=submit] {
+    width: 100%;
+    max-width: none;
+  }
+
+  section {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .container-border {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 25px;
+  }
+
+  .border {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .maimuni, .txa, .spliyvi {
+    text-align: left;
+    flex: 1;
+  }
+
+  .body-cont {
+    padding: 40px 4%;
+  }
+
+  .flex-images {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .holiday {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+   
+  }
+
+  .racxa {
+    padding: 40px 4%;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    margin-bottom: 30px;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .h1-footer {
+    width: auto;
+    font-size: clamp(20px, 4vw, 24px);
+  }
+
+  .p-footer {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .icons {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .footer-section {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .footer-section h4 {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 1029px) {
+  body {
+    max-width: 1450px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container {
+    padding: 57px 60px;
+  }
+
+  .flex-container {
+    max-width: 1200px;
+  }
+
+  textarea {
+    max-width: 756px;
+  }
+
+  input[type=text], input[type=Email], input[type=submit] {
+    max-width: 370px;
+  }
+
+  section {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .container-border {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    max-width: 300px;
-    width: 80%;
+    text-align: center;
+    flex: 1;
   }
 
-  h1, .h1-footer {
-    margin-top: 50px;
-    font-size: 18px;
+  .border {
+    margin-bottom: 20px;
   }
 
-  h2, #h2 {
-    margin-top: 50px;
-    font-size: 24px;
+  .maimuni, .txa, .spliyvi {
     text-align: center;
   }
 
-  .title {
-    font-size: 16px;
-    text-align: center;
+  .body-cont {
+    padding: 53px 40px;
   }
 
-  h4 {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .p-footer,
-  .icon-block p {
-    font-size: 13px;
-    text-align: center;
-  }
-
-  .icon-block label {
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .maimuni,
-  .txa,
-  .spliyvi {
-    text-align: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  textarea,
-  .container-input input,
-  input[type="submit"] {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .racxa,
-  .holiday {
-    width: 100%;
-    height: auto;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .container-border .border {
-    width: 100%;
-    display: flex;
+  .flex-images {
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
+
+  .racxa {
+    padding: 63px 60px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 57px 144px;
+  }
+
+  .racxa {
+    padding: 63px 143px;
+  }
+
+  .body-cont {
+    padding: 53px 61px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section .title {
+  order: 1;
+}
+
+.footer-section h4 {
+  order: 2;
+  display: block;
+}
+
+.container, .body-cont, .racxa, .footer-container {
+  max-width: 100vw;
 }

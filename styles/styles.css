@@ -1,10 +1,11 @@
 body{
     max-width: 1450px;
-    width: 85%;
+    width: 100%;
+    margin: 0;
 }
 
 .container{
-   padding: 57px 144px; 
+   padding: 57px 5%;
 }
 
 h1{
@@ -19,8 +20,9 @@ h1{
 }
 
 h2{
-    width: 371px;
-    height: 112px;
+    max-width: 371px;
+    width: 100%;
+    height: auto;
     font-weight: 400;
     font-size: 49px;
     color: #202c2d;
@@ -35,7 +37,8 @@ h2{
 }
 
 textarea {
-  width: 756px;
+  max-width: 756px;
+  width: 100%;
   height: 298px;
   padding: 23px 21px;
   border: 2px solid #00000033;
@@ -44,6 +47,12 @@ textarea {
   font-size: 14px;
   font-weight: 700;
   resize: none;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #ff0000;
 }
 
 .flex-container{
@@ -60,7 +69,8 @@ textarea {
 }
 
 input[type=text],input[type=Email] {
-    width: 370px; 
+    max-width: 370px; 
+    width: 100%;
     height: 59px; 
     border: 2px solid #00000033; 
     background-color:#D4D3D34D; 
@@ -70,9 +80,15 @@ input[type=text],input[type=Email] {
     padding: 21px 19px;
     margin-bottom: -10px;
 }
+input[type=text]:focus,
+input[type=Email]:focus {
+    outline: none;
+    border-color: #0066ff;
+}
 
 input[type=submit]{
-    width: 370px; 
+    max-width: 370px; 
+    width: 100%;
     height: 59px; 
     border: transparent;
     background-color:#5968F4; 
@@ -82,11 +98,23 @@ input[type=submit]{
     cursor: pointer;
 }
 
+input[type=submit]:hover {
+    background-color: #5cff0a;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
 .container-border {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
 }
 
 .border {
@@ -97,7 +125,7 @@ input[type=submit]{
     border-radius: 100%;
     justify-content: center;
     align-items: center; 
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }    
 
 .email{
@@ -126,27 +154,33 @@ input[type=submit]{
 }
 
 .maimuni, .txa, .spliyvi{
+    display: flex;
     flex-direction: column;
+    text-align: center;
+    color: #99999A;
+    font-size: 15px;
+    font-weight: 700;
+    height: 17px;
 }
 
 .edu{
-    width: 183px;
+    width: auto;
 }
 
 .edi{
-    width: 226px;
+    width: auto;
 }
 
 .num{
-    width: 122px;
+    width: auto;
 }
 
 .str{
-    width: 163px;
+    width: auto;
 }
 
 .street{
-    width: 188px;
+    width: auto;
 }
 
 label{
@@ -154,6 +188,7 @@ label{
     height: 23px;
     font-weight: 700;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 p{
@@ -161,15 +196,15 @@ p{
 }
 
 .meili{
-    width: 54px;
+    width: auto;
 }
 
 .tele{
-    width: 62px;
+    width: auto;
 }
 
 .map{
-    width: 84px;
+    width: auto;
 }
 
 .container-hh{
@@ -189,21 +224,22 @@ p{
 #h2{
     width: 548px;
     color: #FFFFFF;
-    background: #4268bc8e;
     text-shadow: 0 0 10px #4c4fed;
     color: #6200ff;
-    background: #20123b24;
     border-radius: 12px;
 }
 
 .flex-images{
     display: flex;
-    gap: 99px;
+    flex-direction: row;
+    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .body-cont{
-    padding: 53px 61px;
+    padding: 53px 5%;
 }
 
 .holiday{
@@ -212,22 +248,21 @@ p{
     box-shadow: 10px 19px 52px 0px rgba(58,58,96,0.99);
     -webkit-box-shadow: 10px 19px 52px 0px rgba(58,58,96,0.99);
     -moz-box-shadow: 10px 19px 52px 0px rgba(58,58,96,0.99);
+    flex-shrink: 0;
 }
 
 .racxa {
   display: flex;
   flex-direction: column;
   background: #000000;
-  padding: 63px 143px;
+  padding: 63px 5%;
   color: #ffffff;
   width: 100%;
-  max-width: 1440px;
-  height: 372px;
+  min-height: 372px;
 }
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -320,5 +355,5 @@ h4 {
 }
 
 .h4-yahoo::before, .h4-tele::before, .h4-location::before{
-  margin-right: 4px;
+  margin-right: 14px;
 }
